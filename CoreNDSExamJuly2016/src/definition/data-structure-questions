@@ -1,0 +1,115 @@
+Please answer the below Data Structure Questions:
+
+why do we need data structure?
+Answer:Data structure is a particular way of storing and organizing information  in a computer  so
+that it can be retrieved and used most productively.
+
+List out the areas in which data structures are applied extensively?
+Answer:Compiler Design,Operating System,Database Management System,Statistical analysis package,Numerical Analysis, Graphics,
+       Artificial Intelligence,Simulation
+
+what is an Array?
+Answer: An arrangement of objects or numbers in columns and rows is called an array
+
+what is the difference between the Array and ArrayList?
+Answer:Arrays are static in size, ArrayLists are dynamic. Adding an element or retrieving an element from the array or arraylist
+object has almost same  performance.Automatic resize process of ArrayList will slow down the performance as it will use temporary
+array to copy elements from the old array to new array. ArrayList can not contains primitive data types (like int , float , double)
+it can only contains Object, while Array can contain both primitive data types as well as objects.  We can insert elements into the arraylist
+object using the add() method while  in array we insert elements using the assignment operator.
+
+what is LinkedList?
+Answer: A linked list is a linear data structure where each element is a separate object.
+Each element or node of a list is comprising of two items - the data and a reference to the next node.
+The last node has a reference to null. The entry point into a linked list is called the head of the list.
+
+what is queue?
+Answer: A queue is a container of objects (a linear collection) that are inserted and removed according to the
+first-in first-out (FIFO) principle.
+
+what is stack?
+Answer: A stack is a container of objects that are inserted and removed according to the last-in first-out (LIFO) principle.
+In the pushdown stacks only two operations are allowed: push the item into the stack, and pop the item out of the stack.
+
+what is FIFO and LIFO?
+Answer: first-in first-out (FIFO), last-in first-out (LIFO).
+
+what is the order of complexity?
+Answer:
+what is the best case to search an element from an array?
+Answer: The best case is the element we search for is the first element in the array
+
+what is the worst case to search an element from an array?
+Answer: The worst case is the element we search for is the last element of the array or it is not in the array.
+
+what is tree in data structure?
+Answer: Tree is a special datastructure used for data storage purposes. A binary tree has a special condition that each node can have two children at maximum.
+A binary tree have benefits of both an ordered array and a linked list as search is as quick as in sorted array and insertion or deletion
+ operation are as fast as in linked list.
+
+what is graph in data structure?
+Answer: A graph is a pictorial representation of a set of objects where some pairs of objects are connected by links. The interconnected objects are represented
+by points termed as vertices, and the links that connect the vertices are called edges.
+
+what is the difference between the HashTable and HashMap?
+Answer:Hashtable is synchronized, whereas HashMap is not. This makes HashMap better for non-threaded applications, as unsynchronized Objects typically perform
+       better than synchronized ones. Hashtable does not allow null keys or values.  HashMap allows one null key and any number of null values.
+       One of HashMap's subclasses is LinkedHashMap, so in the event that you'd want predictable iteration order (which is insertion order by default), you could
+       easily swap out the HashMap for a LinkedHashMap.
+
+What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
+Answer: RDBMS – Array , Network data model – Graph, Hierarchical data model – Trees
+
+How HashMap works in java?
+Answer: HashMap works on the principal of hashing.HashMap provides put(key, value) for storing and get(key) method for retrieving Values from HashMap.
+        When put() method is used to store (Key, Value) pair, HashMap implementation calls hashcode on Key object to calculate a hash that is used to find a
+        bucket where Entry object will be stored. When get() method is used to retrieve value, again key object is used to calculate a hash which is used
+        then to find a bucket where that particular key is stored.
+
+What is ArrayIndexOutOfBoundsException in java? When it occurs?
+Answer: All array accesses are checked at run time; an attempt to use an index that is less than zero or greater than or equal to the length of the array
+        causes an ArrayIndexOutOfBoundsException to be thrown
+
+What are the different ways of copying an array into another array?
+Answer:The first approach: define a new vector, allocate space for the new array, copy values from the initial array.
+       The second approach: define a new array, allocate space for the new array, copy initial values of the array with arraycopy.
+
+What is difference between an array and a linked list?
+answer: The size of the array is fixed, linked list has dynamic size. Inserting a new element in an array of elements is expensive, because room has to be created for
+the new elements and to create room existing elements have to shifted. linked Lists provide ease of insertion/deletion.
+
+What is DFS and BFS?
+Answer: Breadth-first search (BFS) is an algorithm for traversing or searching tree or graph data structures.
+        Depth first search(DFS) is another way of traversing graphs, which is related to preorder traversal of a tree.P reorder traversal simply visits
+        each node before its children.
+
+What is Recursion?
+Answer: Recursion is a basic programming technique you can use in Java, in which a method calls itself to solve some problem.
+        A method that uses this technique is recursive.
+
+What is Big-(O)-notation?
+Answer: Big O notation is used in Computer Science to describe the performance or complexity of an algorithm. Big O specifically describes the worst-case scenario,
+        and can be used to describe the execution time required or the space used (e.g. in memory or on disk) by an algorithm.
+
+Outlined different kind of sorting algorithm with time complexity?
+Answer: Bubble Sort [Best: O(n), Worst:O(N^2)]
+        Selection Sort [Best/Worst: O(N^2)]
+        Insertion Sort [Best: O(N), Worst:O(N^2)]
+        Quicksort [Best: O(N lg N), Avg: O(N lg N), Worst:O(N^2)]
+        Heapsort [Best/Avg/Worst: O(N lg N)]
+        Counting sort [Best/Avg/Worst: O(N)]
+        Radix sort [Best/Avg/Worst: O(N)]
+
+Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
+  a)In terms of Accessing element.
+  b)In terms of Inserting element.
+  c)In terms of Searching element.
+  d)In terms of Removing element.
+                        Acess       Search      Insertion      Deletion
+  Array                 0(1)        0(n)        0(n)           0(n)
+  Stack                 0(n)        0(n)        0(1)           0(1)
+  Queue                 0(n)        0(n)        O(1)           O(1)
+  Singly-Linked List    0(n)        0(n)        O(1)           O(1)
+  Doubly-Linked List    0(n)        0(n)        O(1)           O(1)
+  Hash Table            N/A         O(1)        O(1)           O(1)
+  Tree-based            0(log(n))   0(log(n))   0(log(n))     0(log(n))
